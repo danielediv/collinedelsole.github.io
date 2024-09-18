@@ -212,17 +212,34 @@ p {
 }
 
 /* Sezione Servizi */
-.servizi-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
-    padding: 0;
+#services {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
 }
 
-.servizi-list li {
-    width: 25%;
-    text-align: center;
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Consente di andare su più righe */
+    justify-content: center; /* Centra gli elementi */
+    gap: 20px; /* Spazio tra gli elementi */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 200px; /* Larghezza minima di ogni elemento */
+    flex: 1 1 200px; /* Gli elementi si adattano e si restringono se necessario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contatti */
@@ -303,6 +320,14 @@ footer .social a:hover {
     .room img {
         height: 150px;
     }
+	.services-container {
+        gap: 15px; /* Riduce lo spazio tra i servizi su schermi più piccoli */
+    }
+
+    .service-item {
+        min-width: 150px; /* Riduce la larghezza minima su schermi piccoli */
+    }
+}
 
     #contact {
         padding: 20px;
@@ -334,6 +359,11 @@ footer .social a:hover {
     .room p {
         font-size: 0.9em;
     }
+	.service-item {
+        min-width: 120px; /* Ancora più piccola su smartphone */
+        padding: 15px;
+    }
+
 
     footer {
         font-size: 0.9em;
