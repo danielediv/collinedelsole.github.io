@@ -289,6 +289,38 @@ form button:hover {
     background-color: #0056b3;
 }
 
+/* Layout camera con foto a sinistra e servizi a destra */
+.camera-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.camera-servizi {
+    width: 40%;
+}
+
+.camera-servizi h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.camera-servizi ul {
+    list-style: none;
+    padding: 0;
+}
+
+.camera-servizi ul li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.camera-foto img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -370,6 +402,14 @@ footer .social a:hover {
 
     .check-arrow {
         margin: 20px 0;
+    }
+	
+	.camera-layout {
+        flex-direction: column;
+    }
+
+    .camera-servizi {
+        width: 100%;
     }
 }
 
