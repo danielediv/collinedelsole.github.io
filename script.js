@@ -4,8 +4,6 @@
         const totalImages = images.length;
         let currentIndex = 0;
 
-        const nextButton = document.querySelector('.next');
-        const prevButton = document.querySelector('.prev');
         const carouselImages = document.querySelector('.carousel-images');
 
         // Funzione per mostrare l'immagine corrente
@@ -24,10 +22,6 @@
             currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Va all'ultima immagine se si trova alla prima
             showImage(currentIndex);
         }
-
-        // Event listeners per i pulsanti
-        nextButton.addEventListener('click', nextImage);
-        prevButton.addEventListener('click', prevImage);
 
         // Scorrimento automatico ogni 3 secondi
         setInterval(nextImage, 2000);

@@ -75,26 +75,6 @@ nav ul li a:hover {
     flex-shrink: 0;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 2em;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button.prev {
-    left: 0;
-}
-
-button.next {
-    right: 0;
-}
-
 /* Riquadro dei contatti */
 .contact-box {
     position: absolute;
@@ -303,6 +283,15 @@ footer .social a:hover {
     nav a {
         margin: 10px 0;
     }
+	
+	/* Sposta la contact-box sopra l'header */
+    .contact-box {
+        position: static;
+        margin-bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
 
     /* Ridimensionamento del carosello */
     #carousel {
@@ -367,6 +356,11 @@ footer .social a:hover {
 
     footer {
         font-size: 0.9em;
+    }
+	/* Riduce ulteriormente la contact-box su schermi molto piccoli */
+    .contact-box {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 
