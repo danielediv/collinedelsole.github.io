@@ -422,6 +422,11 @@ footer .social a:hover {
 	.camera-layout {
         flex-direction: column;
     }
+	
+	.camera-foto {
+        width: 100%; /* Larghezza completa su smartphone */
+        grid-template-columns: 1fr; /* Una singola colonna per le immagini */
+    }
 
     .camera-servizi {
         width: 100%;
@@ -453,7 +458,21 @@ footer .social a:hover {
         min-width: 120px; /* Ancora più piccola su smartphone */
         padding: 15px;
     }
+    .camera-layout {
+        flex-direction: column; /* Dispone tutto in colonna su schermi piccoli */
+        align-items: center; /* Centra il contenuto */
+    }
 
+    .camera-foto {
+        width: 100%; /* Larghezza completa su smartphone */
+        grid-template-columns: 1fr; /* Una singola colonna per le immagini */
+    }
+
+    .camera-servizi {
+        width: 100%; /* Larghezza completa per i servizi */
+        text-align: center; /* Centra il testo dei servizi */
+    }
+}
 
     footer {
         font-size: 0.9em;
