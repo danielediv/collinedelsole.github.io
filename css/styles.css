@@ -62,9 +62,10 @@ nav ul li a:hover {
 
 .carousel-container {
     width: 100%; /* O imposta una larghezza fissa, ad esempio 600px */
-    height: 600px; /* Imposta l'altezza fissa che preferisci */
+    height: 700px; /* Imposta l'altezza fissa che preferisci */
     position: relative;
     overflow: hidden; /* Nascondi l'eventuale parte di immagine in eccesso */
+	background-color: #edeceb;
 }
 
 .carousel-images {
@@ -75,17 +76,19 @@ nav ul li a:hover {
 .carousel-container img {
     width: 100%; /* Le immagini si adatteranno alla larghezza del contenitore */
     height: auto; /* Le immagini si adatteranno all'altezza del contenitore */
-    object-fit: contain; /* Adatta l'immagine riempiendo il contenitore, ritagliando se necessario */
+    object-fit: scale-down; /* Adatta l'immagine riempiendo il contenitore, ritagliando se necessario */
     object-position: center; /* Centra l'immagine nel contenitore */
 }
 
 /* Riquadro dei contatti */
 .contact-box {
-	width: 300px;
+	width: auto; /* Annulla eventuale larghezza ereditata */
+    max-width: 300px;
     position: absolute;
     top: 20px;
     right: 60px;
-    background-color: #fff;
+	/* left: 1000px; */
+    background-color: #edeceb;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
@@ -303,18 +306,19 @@ form button:hover {
 }
 
 .camera-foto {
-    width: 100%; /* Imposta la larghezza della sezione foto */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Due colonne per allineare le foto due a due */
-    gap: 20px; /* Spaziatura tra le immagini */
+    display: flex;
+    flex-wrap: wrap; /* Le immagini si disporranno su più righe se necessario */
+    gap: 2%; /* Spazio tra le immagini */
 }
 
 .camera-foto img {
-    width: 100%; /* Adatta l’immagine per riempire il contenitore */
-    height: auto; /* Mantieni le proporzioni */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 49%; /* Larghezza per farle stare affiancate due a due */
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover; /* Adatta l’immagine senza distorsioni */
+    margin-bottom: 20px; /* Spazio inferiore tra le righe */
+    border-radius: 8px; /* Facoltativo */
 }
+
 
 .camera-servizi {
     width: 40%;
