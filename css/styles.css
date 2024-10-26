@@ -22,7 +22,7 @@ header {
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .logo img {
@@ -62,7 +62,7 @@ nav ul li a:hover {
 
 .carousel-container {
     width: 100%; /* O imposta una larghezza fissa, ad esempio 600px */
-    height: 800px; /* Imposta l'altezza fissa che preferisci */
+    height: 600px; /* Imposta l'altezza fissa che preferisci */
     position: relative;
     overflow: hidden; /* Nascondi l'eventuale parte di immagine in eccesso */
 }
@@ -81,6 +81,7 @@ nav ul li a:hover {
 
 /* Riquadro dei contatti */
 .contact-box {
+	width: 300px;
     position: absolute;
     top: 20px;
     right: 60px;
