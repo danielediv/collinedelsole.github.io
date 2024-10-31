@@ -25,8 +25,20 @@ header {
     max-width: 1200px;
 }
 
-.logo img {
-    width: 200px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img1 {
+    width: 200px; /* Regola la larghezza dell'immagine 1 */
+    height: auto;
+}
+
+.img2 {
+    width: 100px; /* Regola la larghezza dell'immagine 2 */
+    height: auto;
 }
 
 nav ul {
@@ -97,7 +109,7 @@ nav ul li a:hover {
 
 .contact-box h3 {
     margin-top: 0;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .contact-box p {
@@ -151,6 +163,15 @@ p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #666;
+}
+
+#chi-siamo 
+.chi-siamo-img {
+    display: block; /* Rende l'elemento centrabile */
+    margin: 20px auto; /* Centra l'immagine orizzontalmente e aggiunge spazio sopra */
+    width: 60%; /* Imposta una larghezza per l'immagine (regola in base alle necessità) */
+    max-width: 400px; /* Limita la larghezza massima */
+    border-radius: 8px; /* Facoltativo: aggiunge bordi arrotondati */
 }
 
 /* Griglia delle camere */
